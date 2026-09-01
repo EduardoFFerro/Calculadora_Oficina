@@ -31,23 +31,28 @@ while True:
         a = float(input("Digite o primeiro número: "))
         b = float(input("Digite o segundo número: "))
 
+
         if escolha == "1":
             resultado = calc_basico.somar(a, b)
+            aux="+"
 
         elif escolha == "2":
             resultado = calc_basico.subtrair(a, b)
+            aux="-"
 
         elif escolha == "3":
             resultado = calc_basico.multiplicar(a, b)
+            aux="*"
 
         elif escolha == "4":
             resultado = calc_basico.dividir(a, b)
+            aux="/"
 
         else:
             print("Opção inválida.")
             continue
 
-        print("Resultado:", resultado)
+        print("A conta", a, aux, b, "=", resultado)
 
     # ---------------- SAIR ----------------
     elif opcao == "0":
